@@ -138,6 +138,12 @@
     padding: 20px;
 }
 
+.topTag{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .myChart{
     height: 30vh;
