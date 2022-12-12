@@ -2,6 +2,21 @@ firebase.auth().onAuthStateChanged((user)=>{
     if (user){
 
 
+        //pull paymentMethod
+
+        // firebase.firestore().collection("paymentMethod").get().then((querySnapshot)=>{
+        //     let content = '';
+        //     querySnapshot.forEach((doc)=>{
+
+        //         let pMethod = doc.data().pMethodInput;
+        //         let docId = doc.data().docId;   
+                
+        //         content += '<option value="'+pMethod+'">'+pMethod+'</option>';
+
+        //     })
+        //     $("#paymentMethod").append(content);
+        // })
+
         // Add income
         document.getElementByid("addIncome").onclick = function (){
             let incAmount = document.getElementByid(incAmount).value;
@@ -52,6 +67,6 @@ firebase.auth().onAuthStateChanged((user)=>{
         })
 
     }else{
-        
+
     }
 })
